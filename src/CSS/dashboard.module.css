@@ -1,0 +1,152 @@
+.main_dashboard {
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.left_dashboard {
+  border-right: 2px solid rgb(240, 240, 240);
+  max-height: 93vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+#logo {
+  color: black;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.services_header {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid rgba(232, 232, 232, 0.803);
+  margin-top: 5%;
+  margin-left: 5%;
+  color: gray;
+  align-items: center;
+}
+
+.tabs_section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.tab {
+  color: rgb(38, 38, 38);
+  display: flex;
+  align-items: center;
+  /* min-height: 2.5vw; */
+  /* gap: 10px; */
+  /* font-size:; */
+  padding: 10px;
+  padding-left: 10%;
+}
+.dashboardbox {
+  color: rgb(38, 38, 38);
+  display: flex;
+  align-items: start;
+  /* min-height: 2.5vw; */
+  /* gap: 10px; */
+  padding: 10px;
+  padding-left: 10%;
+}
+
+.tab.active {
+  background-color: rgb(230, 247, 255);
+  border-right: 3px solid rgb(24, 144, 255);
+  color: rgb(24, 144, 255);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tab > p {
+  font-size: 12px;
+  font-family: Public_Sans;
+}
+
+.tab:hover {
+  background-color: rgb(230, 247, 255);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*  for right dashboard  */
+.right_dashboard {
+  max-height: 93vh;
+  width: 82.5vw; /* default width for medium and large devices */
+  margin: 0%;
+}
+
+/* Adjust width for small devices */
+@media (max-width: 600px) {
+  .right_dashboard {
+    width: 100vw;
+  }
+}
+
+/* above css is such that when the device is small then the width is 100vw */
+
+.display_dashboard {
+  margin: auto;
+  background: #fff;
+  margin-top: 1%;
+
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+
+/*  navbar */
+.dashboard_nav {
+  /* height: 7vh; */
+  /* border-bottom: 2px solid rgb(240, 240, 240); */
+  /* display: flex; */
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 2px; */
+  /* background: yellow; */
+  /* background: #fff; */
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 0.3px 0.2px;
+  width: 82.5vw;
+}
+
+/*  card css  */
+/* premiumCard.module.css */
+
+.roundedCard {
+  width: 80vw;
+  margin: 2%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+}
+@media (max-width: 600px) {
+  .roundedCard {
+    width: 98vw;
+    margin: 1%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+  }
+}
+.cardContentLeft {
+  flex: 1;
+  color: white;
+  font-weight: 300;
+}
+
+.cardContentRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unlockButton {
+  background-color: #ffffff;
+}
